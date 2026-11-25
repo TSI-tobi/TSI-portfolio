@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tobi | Photography, video, graphics and styling</title>
+<meta name="description" content="Tobi is a Nigerian creative working across photography, videography, thumbnails and design, and styling, under TSI.">
+<meta name="color-scheme" content="light">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,300..800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="images/logo.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Colour filters: recolour your logo to the theme caramel.
+     #tint = logo with a transparent background. #ink = dark letters on a light/white background. -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <filter id="tint" color-interpolation-filters="sRGB">
+    <feColorMatrix type="matrix" values="0 0 0 0 0.561  0 0 0 0 0.333  0 0 0 0 0.094  0 0 0 1 0"/>
+  </filter>
+  <filter id="ink" color-interpolation-filters="sRGB">
+    <feColorMatrix type="matrix" values="0 0 0 0 0.561  0 0 0 0 0.333  0 0 0 0 0.094  -0.2126 -0.7152 -0.0722 0 1"/>
+  </filter>
+</svg>
+
+<!-- Doodle background: camera, clapperboard, hanger, film strip, photo, tee, play, aperture, crosses -->
+<svg class="doodles" aria-hidden="true" focusable="false">
+  <defs>
+    <pattern id="doodle" width="360" height="360" patternUnits="userSpaceOnUse">
+      <animateTransform id="drift" attributeName="patternTransform" type="translate" from="0 0" to="360 360" dur="140s" repeatCount="indefinite"/>
+      <g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+        <g transform="translate(24 30) rotate(-8)"><rect x="0" y="8" width="52" height="34" rx="6"/><path d="M14 8l5-7h14l5 7"/><circle cx="26" cy="25" r="9"/><circle cx="26" cy="25" r="3.5"/><circle cx="44" cy="16" r="1.5"/></g>
+        <g transform="translate(160 26) rotate(6)"><rect x="0" y="16" width="50" height="32" rx="3"/><path d="M-1 12l52-10 2 8-52 10z"/><path d="M12 8l6 8M26 5l6 8M40 2l6 8"/></g>
+        <g transform="translate(285 22) rotate(8)"><path d="M26 22v-4c0-3 6-4 6-10a6 6 0 1 0-12 0"/><path d="M26 22L3 37c-3 2-2 7 2 7h42c4 0 5-5 2-7z"/></g>
+        <g transform="translate(20 168) rotate(-5)"><rect width="84" height="36" rx="3"/><path d="M6 4h72M6 32h72" stroke-dasharray="4 8"/><rect x="9" y="11" width="19" height="14"/><rect x="33" y="11" width="19" height="14"/><rect x="57" y="11" width="19" height="14"/></g>
+        <g transform="translate(176 150) rotate(7)"><rect width="46" height="56" rx="3"/><rect x="6" y="6" width="34" height="32"/><path d="M6 32l10-10 8 8 6-5 10 9"/><circle cx="30" cy="16" r="3"/></g>
+        <g transform="translate(284 164) rotate(-6)"><path d="M14 4L2 12l6 10 6-3v28h28V19l6 3 6-10L42 4c-2 5-6 7-14 7S16 9 14 4z"/></g>
+        <g transform="translate(30 284)"><circle cx="20" cy="20" r="19"/><path d="M15 12l14 8-14 8z"/></g>
+        <g transform="translate(165 284)"><circle cx="22" cy="22" r="21"/><circle cx="22" cy="22" r="8"/><path d="M22 14L36 9M30 22L39 35M22 30L8 35M14 22L5 9"/></g>
+        <g transform="translate(292 286) rotate(-8) scale(.9)"><path d="M26 22v-4c0-3 6-4 6-10a6 6 0 1 0-12 0"/><path d="M26 22L3 37c-3 2-2 7 2 7h42c4 0 5-5 2-7z"/></g>
+        <path d="M110 99v12M104 105h12"/>
+        <path d="M236 105l10 10M246 105l-10 10"/>
+        <path d="M338 112v12M332 118h12"/>
+        <path d="M16 112l10 10M26 112l-10 10"/>
+        <path d="M122 229v12M116 235h12"/>
+        <path d="M246 236l10 10M256 236l-10 10"/>
+        <path d="M40 241v12M34 247h12"/>
+        <path d="M330 250l10 10M340 250l-10 10"/>
+        <path d="M106 338v12M100 344h12"/>
+        <path d="M232 340l10 10M242 340l-10 10"/>
+        <path d="M346 338v12M340 344h12"/>
+        <circle cx="100" cy="40" r="2"/><circle cx="250" cy="70" r="2"/><circle cx="150" cy="120" r="2"/><circle cx="310" cy="220" r="2"/><circle cx="90" cy="290" r="2"/><circle cx="240" cy="310" r="2"/>
+      </g>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#doodle)"/>
+</svg>
+
+<header class="site-nav">
+  <div class="wrap nav">
+    <a class="brand" href="#top" id="top" aria-label="TSI home">
+      <img src="images/logo.png" alt="TSI logo">
+    </a>
+    <nav aria-label="Main"><ul>
+      <li><a href="#photos">Photos</a></li>
+      <li><a href="#videos">Videos</a></li>
+      <li><a href="#designs">Designs</a></li>
+      <li><a href="#styling">Styling</a></li>
+      <li><a href="#social">Find me</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul></nav>
+  </div>
+</header>
+
+<main>
+<div class="hero">
+  <div class="wrap hero-main">
+    <h1 class="wordmark" aria-label="Tobi"><span aria-hidden="true">Tobi</span></h1>
+    <div class="deck-wrap">
+      <div class="deck" id="deck" aria-label="Deck of my work"></div>
+      <div class="deck-ctl">
+        <button class="btn main" id="shuf" type="button">Shuffle</button>
+        <button class="btn" id="nextCard" type="button">Next card</button>
+        <span class="deck-count" id="deckCount"></span>
+      </div>
+      <p class="hint">Tap the top card to open it</p>
+    </div>
+  </div>
+  <div class="wrap hero-foot">
+    <p>I shoot, film, design and style for people and brands that want to be remembered.</p>
+    <!-- Availability badge: delete this whole div if you don't want it -->
+    <div class="avail">
+      <span class="dot" aria-hidden="true"></span>
+      <div><b>Based in Nigeria</b><small>Available to travel for shoots</small></div>
+    </div>
+  </div>
+</div>
+
+<div class="ticker" aria-hidden="true"><div class="track" id="track"></div></div>
+
+<section id="photos">
+  <div class="wrap">
+    <h2>Photography</h2>
+    <p class="lead">Portraits, fashion, events and brand shoots. Open a shoot to flip through every frame.</p>
+    <div class="group"><div class="g g-photo" id="g-photo"></div></div>
+  </div>
+</section>
+
+<section class="cream" id="videos">
+  <div class="wrap">
+    <h2>Videography</h2>
+    <p class="lead">Tap any video to watch it here.</p>
+    <div class="group">
+      <h3>Short form</h3>
+      <p class="sub">Reels, TikToks and Shorts</p>
+      <div class="g g-short" id="g-short"></div>
+    </div>
+    <div class="group">
+      <h3>Long form</h3>
+      <p class="sub">Films, highlights and full edits</p>
+      <div class="g g-long" id="g-long"></div>
+    </div>
+  </div>
+</section>
+
+<section id="designs">
+  <div class="wrap">
+    <h2>Thumbnails and designs</h2>
+    <p class="lead">Visuals made to stop the scroll and win the click.</p>
+    <div class="group">
+      <h3>Thumbnails</h3>
+      <p class="sub">YouTube and social covers</p>
+      <div class="g g-thumb" id="g-thumb"></div>
+    </div>
+    <div class="group">
+      <h3>Posters and brand designs</h3>
+      <p class="sub">Flyers, logos and campaign graphics</p>
+      <div class="g g-poster" id="g-poster"></div>
+    </div>
+  </div>
+</section>
+
+<section class="cream" id="styling">
+  <div class="wrap">
+    <h2>Styling</h2>
+    <p class="lead">Looks put together for shoots, content and campaigns.</p>
+    <div class="group"><div class="g g-style" id="g-style"></div></div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap about">
+    <div class="portrait" id="portrait"></div>
+    <div>
+      <h2>Hi, I'm Tobi</h2>
+      <p>I'm a creative from Nigeria working under TSI. I started with a camera and kept adding skills: video, design and styling.</p>
+      <p>That means I can take a project from first idea to final delivery. One person, one point of view, and visuals that all look like they belong together.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cream" id="social">
+  <div class="wrap">
+    <h2>Find me online</h2>
+    <p class="lead">My personal pages, away from client work. Same name everywhere: <b id="handleText">@tobilobaonii</b>.</p>
+    <div class="social-grid" id="socGrid"></div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <h2>Have a project in mind?</h2>
+    <p>Tell me what you're working on and when you need it. I usually reply within a day.</p>
+    <div class="btns">
+      <a class="btn main" id="wa" href="#contact">Message on WhatsApp</a>
+      <a class="btn" id="mail" href="#contact">Send an email</a>
+      <a class="btn" id="ig" href="#contact">TSI on Instagram</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap"><span>TSI</span><span id="year"></span></div></footer>
+
+<dialog id="lb" aria-label="Work preview">
+  <button class="close" id="lbClose">Close</button>
+  <div class="stage" id="stage"></div>
+  <p class="lb-cap" id="lbCap"></p>
+  <div class="lb-nav" id="lbNav" hidden>
+    <button id="prev" type="button">Previous</button>
+    <button id="next" type="button">Next</button>
+  </div>
+</dialog>
+
+<script src="js/main.js"></script>
+</body>
+</html>
